@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-paper: #FDFBF7;
+  --color-line: #D0E1FD;
+  --color-margin: #FFAAA6;
+  --color-ink-blue: #0000CD;
+  --color-ink-red: #FF0000;
+}
+
+body {
+  font-family: 'Patrick Hand', 'Gaegu', cursive, sans-serif;
+  color: #0000CD;
+  background-color: #FDFBF7;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Notebook paper with red vertical margin line and blue horizontal ruled lines */
+.notebook-paper {
+  background-color: #FDFBF7;
+  background-image: 
+    linear-gradient(to right, transparent 52px, #FFAAA6 52px, #FFAAA6 54px, transparent 54px),
+    repeating-linear-gradient(transparent, transparent 27px, #D0E1FD 27px, #D0E1FD 28px);
+  background-size: 100% 100%, 100% 28px;
+  line-height: 28px;
+}
+
+/* Lined paper pattern without vertical margin line (useful for dialogs/cards) */
+.notebook-lines {
+  background-color: #FDFBF7;
+  background-image: repeating-linear-gradient(transparent, transparent 27px, #D0E1FD 27px, #D0E1FD 28px);
+  background-size: 100% 28px;
+  line-height: 28px;
+}
+
+/* Hand-drawn style imperfect borders */
+.doodle-box {
+  border: 2px solid #0000CD;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-shadow: 3px 3px 0px rgba(0, 0, 205, 0.2);
+}
+
+.doodle-box-red {
+  border: 2px solid #FF0000;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-shadow: 3px 3px 0px rgba(255, 0, 0, 0.2);
+}
+
+/* Hand-drawn button */
+.doodle-btn {
+  border: 2px solid #0000CD;
+  border-radius: 255px 20px 225px 20px/20px 225px 20px 255px;
+  box-shadow: 2px 3px 0px #0000CD;
+  transition: all 0.15s ease-in-out;
+}
+
+.doodle-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 3px 4px 0px #0000CD;
+}
+
+.doodle-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px #0000CD;
+}
+
+/* Stamp Effect */
+.stamp-clear {
+  border: 3px double #FF0000;
+  border-radius: 8px;
+  color: #FF0000;
+  font-family: 'Gaegu', cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transform: rotate(-10deg);
+  display: inline-block;
+  padding: 4px 12px;
+  box-shadow: 0 0 0 1px #FF0000;
+}
