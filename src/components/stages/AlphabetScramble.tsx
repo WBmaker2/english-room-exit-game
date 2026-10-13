@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Volume2, RotateCcw, Check, Sparkles } from 'lucide-react';
+import { Volume2, RotateCcw, Sparkles } from 'lucide-react';
 import { WordItem } from '../../types/game';
 import { soundEngine } from '../../utils/audioManager';
 

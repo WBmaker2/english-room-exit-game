@@ -1,6 +1,6 @@
 import React from 'react';
 import { Volume2, VolumeX, BookOpen, Map, RotateCcw } from 'lucide-react';
-import { GameProgress, StageId } from '../../types/game';
+import { GameProgress } from '../../types/game';
 import { STAGES_DATA } from '../../data/stagesData';
 import { soundEngine } from '../../utils/audioManager';
 

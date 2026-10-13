@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, ArrowRight, Key, Sparkles } from 'lucide-react';
+import { ArrowRight, Key } from 'lucide-react';
 import { StageItem } from '../../types/game';
 import { StickFigureCheer, DoodleStar } from '../layout/DoodleElements';
 import { soundEngine } from '../../utils/audioManager';
